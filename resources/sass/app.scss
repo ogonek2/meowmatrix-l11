@@ -1,0 +1,230 @@
+@import 'variables';
+
+// p {
+//     font-family: $impact_font;
+//     font-size: clamp(40px, 10vw, 110px); // Минимум 40px, адаптивно, максимум 110px
+//     max-width: 100%; // Чтобы текст не вылезал
+//     text-wrap: balance; // Лучше распределяет текст при переносе
+// }
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    background-color: var(--background-page-color);
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+img {
+    vertical-align: middle;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    color: unset;
+    text-decoration: none;
+}
+
+button,
+input {
+    background-color: unset;
+    border: unset;
+    outline: unset;
+}
+
+.head-t-class {
+    font-size: 40px;
+    font-family: $impact_font;
+    text-transform: uppercase;
+    @media (max-width: 1080px) {
+        font-size: 24px;
+    }
+}
+
+.head-t-class-style {
+    font-size: 80px;
+    font-family: $impact_font;
+    text-transform: uppercase;
+    @media (max-width: 1080px) {
+        font-size: 40px;
+    }
+}
+
+.head-f-class-style {
+    font-size: 70px;
+    font-family: $impact_font;
+    text-transform: uppercase;
+    @media (max-width: 1080px) {
+        font-size: 40px;
+    }
+}
+
+.box {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 100;
+}
+
+.full-width {
+    width: 100%;
+    max-width: unset;
+}
+
+.block-numeric {
+    position: absolute;
+    z-index: 15;
+    background:
+        conic-gradient(from 90deg at top var(--b) left var(--b), var(--_g)) 0 0 / var(--_p),
+        conic-gradient(from 180deg at top var(--b) right var(--b), var(--_g)) 100% 0 / var(--_p),
+        conic-gradient(from 0deg at bottom var(--b) left var(--b), var(--_g)) 0 100% / var(--_p),
+        conic-gradient(from -90deg at bottom var(--b) right var(--b), var(--_g)) 100% 100% / var(--_p);
+
+    /*Irrelevant code*/
+    width: 200px;
+    height: 200px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    @media (max-width: 1080px) {
+        display: none !important;
+    }
+}
+
+.key-list {
+    padding: 50px 0;
+    width: 100%;
+    max-width: 700px;
+
+    .items-key {
+        display: flex;
+        flex-wrap: wrap;
+        /* Элементы переносятся на новую строку */
+        gap: 10px;
+        justify-content: center;
+
+        .item {
+            padding: 10px 10px;
+            border: 1px solid var(--gray);
+            background-color: var(--white);
+            cursor: pointer;
+
+            p {
+                font-size: clamp(14px, 3vw, 18px);
+                font-family: $lato_font;
+            }
+
+            transition: all .2s ease-in;
+
+            &:hover {
+                background-color: var(--black);
+
+                p {
+                    color: var(--white);
+                }
+            }
+        }
+    }
+}
+
+.buttons-paginator {
+    display: flex;
+    gap: 10px;
+
+    .btn-pag {
+        background-color: #EFEFEF;
+        padding: 14px 16px;
+        cursor: pointer;
+        transition: all .2s ease-in;
+
+        svg {
+            path {
+                transition: all .2s ease-in;
+            }
+        }
+
+        &:hover {
+            background-color: var(--red);
+
+            svg {
+                path {
+                    fill: var(--white);
+                }
+            }
+        }
+    }
+}
+
+.element-texty {
+    font-family: $impact_font;
+    font-size: 50px;
+    overflow: hidden;
+    user-select: none;
+}
+
+.element{
+    transition: all .2s ease-in;
+}
+
+.demo-right-static{
+    transform: translateX(50%);
+}
+.demo-left-static{
+    transform: translateX(-50%);
+}
+
+#app{
+    width: 100%;
+    display: flex;
+    align-items: start;
+    transition: all .2s ease-in;
+}
+
+#over_screen_bar{
+    display: none;
+    position: fixed;
+    right: 0;
+    width: calc(100% - 70px);
+    background-color: var(--black);
+    height: 100vh;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    z-index: 1000;
+    scrollbar-color: var(--lemon) transparent;
+    transition: all .2s ease-in;
+    scroll-behavior: smooth;
+    &.show{
+        display: block;
+    }
+    @media (min-width: 1171px) {
+        display: none !important;
+    }
+}
+
+.page-container{
+    width: 100%;
+    transition: all .2s ease-in;
+}
+.scroll_over_screen{
+    margin-left: calc(-100% + 70px);
+    overflow: hidden;
+    @media (min-width: 1171px) {
+        margin: 0;
+        overflow: auto;
+    }
+}

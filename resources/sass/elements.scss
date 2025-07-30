@@ -1,0 +1,113 @@
+@import 'variables';
+
+.btn{
+    padding: 14px 16px;
+    cursor: pointer;
+    transition: all .2s ease-in;
+    span, &::after{
+        position: relative;
+        z-index: 2;
+    }
+}
+
+.btn-style-first{
+    span{
+        color: var(--black);
+        font-family: $impact_font;
+        font-size: 18px;
+    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--lemon);
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    &::after{
+        content: '';
+        background: url('/storage/source/logo/btn-logo.svg');
+        background-size: 26px;
+        background-repeat: no-repeat;
+        width: 26px;
+        height: 26px;
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        top: -50px;
+        left: -35px;
+        background-color: var(--lemon);
+        width: calc(100% + 50px);
+        height: calc(100% + 100px);
+        transform: rotate(-25deg);
+        transition: all .2s ease-in;
+        z-index: 1;
+    }
+    &:hover{
+        span{
+            color: var(--lemon);
+        }
+        &::before{
+            transform: translateX(100%);
+        }
+    }
+}
+
+.btn-style-black-type{
+    background-color: var(--black);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    width: fit-content;
+    transition: all .2s ease-in;
+    span{
+        color: var(--white);
+        font-family: $impact_font;
+        font-size: 24px;
+    }
+    &::after{
+        content: '';
+        background: url('/storage/source/logo/btn-yellow.svg');
+        background-size: 26px;
+        background-repeat: no-repeat;
+        width: 26px;
+        height: 26px;
+    }
+    &:hover{
+        background-color: var(--red);
+    }
+}
+
+.btn-style-type-2{
+    background-color: var(--lemon);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    width: fit-content;
+    transition: all .2s ease-in;
+    span{
+        color: var(--black);
+        font-family: $impact_font;
+        font-size: 24px;
+    }
+    &::after{
+        content: '';
+        background: url('/storage/source/logo/btn-logo.svg') no-repeat;
+        background-size: 26px;
+        background-repeat: no-repeat;
+        width: 26px;
+        height: 26px;
+    }
+    &:hover{
+        background-color: var(--red);
+        span{
+            color: var(--white);
+        }
+        &::after{
+            background: url('/storage/source/logo/btn-yellow.svg') no-repeat;
+            background-size: 26px;
+        }
+    }
+}

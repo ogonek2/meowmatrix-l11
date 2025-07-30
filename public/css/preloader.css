@@ -1,0 +1,74 @@
+.preloader {
+  position: fixed;
+  z-index: 10000;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.preloader .preload-elements {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.preloader .preload-elements .preload-element-animate {
+  width: 100%;
+  transition: all 0.2s ease-in;
+  position: absolute;
+}
+
+.preloader .preload-elements .preload-element-animate svg {
+  width: 100% !important;
+  aspect-ratio: 1/1;
+  transition: all 0.2s ease-in;
+}
+
+.preloader .preload-elements .preload-element-animate.opacity-effect {
+  opacity: 0.1;
+}
+
+.preloader .preload-elements .preload-element-animate:nth-child(1) svg {
+  transform: translate3d(0px, -50px, 0px);
+  animation: state_1 7s alternate infinite;
+}
+
+.preloader .preload-elements .preload-element-animate:nth-child(2) svg {
+  transform: translate3d(0px, 10px, 0px);
+  animation: state_2 7s alternate infinite;
+}
+
+.preloader .text {
+  font-size: 16px;
+  position: absolute;
+  bottom: 25px;
+}
+
+@keyframes state_1 {
+  0% {
+    transform: translate3d(0px, -50px, 0px) rotateX(64deg) rotateZ(-45deg);
+  }
+  28.5% {
+    transform: translate3d(0px, 0px, 0px) rotateX(64deg) rotateZ(-45deg);
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0px) rotateX(0) rotateZ(0);
+  }
+}
+@keyframes state_2 {
+  0% {
+    transform: translate3d(0px, 10px, 0px) rotateX(64deg) rotateZ(-45deg);
+  }
+  28.5% {
+    transform: translate3d(0px, 0px, 0px) rotateX(64deg) rotateZ(-45deg);
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0px) rotateX(0) rotateZ(0);
+  }
+}

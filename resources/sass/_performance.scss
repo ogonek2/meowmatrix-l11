@@ -1,0 +1,224 @@
+// Оптимизации производительности
+
+// Оптимизация анимаций
+* {
+    box-sizing: border-box;
+}
+
+// Использование transform вместо position для анимаций
+.element {
+    transform: translateX(-100%);
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &.animated {
+        transform: translateX(0);
+    }
+}
+
+// Оптимизация hover эффектов
+.cursor-focus {
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+}
+
+// Оптимизация изображений
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    
+    &[loading="lazy"] {
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        
+        &.loaded {
+            opacity: 1;
+        }
+    }
+}
+
+// Оптимизация фоновых изображений
+.box-container-column {
+    background-attachment: scroll; // Отключаем fixed для лучшей производительности на мобильных
+    
+    @media (max-width: 768px) {
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+// Оптимизация градиентов
+.about-box .element,
+.services-box .element,
+.stack-box .element {
+    background: linear-gradient(225deg, transparent 150px, var(--lemon) 0);
+    will-change: auto; // Отключаем will-change для статических элементов
+}
+
+// Оптимизация анимаций счетчиков
+.numeric {
+    transition: none; // Отключаем transition для счетчиков
+}
+
+// Оптимизация FAQ аккордеона
+.accord-item-obj {
+    transform: translateX(-50%);
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &.active {
+        transform: translateX(0);
+    }
+    
+    .head {
+        cursor: pointer;
+        user-select: none;
+        
+        .control-elem span {
+            transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    }
+    
+    .text {
+        transition: opacity 0.3s ease, max-height 0.3s ease;
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+    }
+    
+    &.active .text {
+        max-height: 500px;
+        opacity: 1;
+    }
+}
+
+// Оптимизация кнопок
+.btn {
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: transform;
+    
+    &:hover {
+        transform: translateY(-2px);
+    }
+    
+    &:active {
+        transform: translateY(0);
+    }
+}
+
+// Оптимизация навигации
+.swiper-button-prev,
+.swiper-button-next {
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: transform, background-color;
+    
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+// Оптимизация пагинации
+.swiper-pagination-bullet {
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: background-color, transform;
+    
+    &-active {
+        transform: scale(1.2);
+    }
+}
+
+// Оптимизация для мобильных устройств
+@media (max-width: 768px) {
+    // Отключаем сложные анимации на мобильных
+    .element {
+        transform: none !important;
+        transition: none !important;
+    }
+    
+    // Упрощаем hover эффекты
+    .cursor-focus:hover {
+        transform: none;
+        box-shadow: none;
+    }
+    
+    // Оптимизируем градиенты
+    .about-box .element,
+    .services-box .element,
+    .stack-box .element {
+        background: var(--lemon);
+    }
+}
+
+// Оптимизация для устройств с предпочтением reduced motion
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+// Оптимизация для устройств с низкой производительностью
+@media (max-width: 480px) {
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: none; // Скрываем кнопки на очень маленьких экранах
+    }
+    
+    .swiper-pagination {
+        position: relative;
+        margin-top: 20px;
+    }
+}
+
+// Оптимизация загрузки
+.lazy-load {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &.loaded {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+// Оптимизация шрифтов
+@font-face {
+    font-display: swap; // Улучшает производительность загрузки шрифтов
+}
+
+// Оптимизация скролла
+html {
+    scroll-behavior: smooth;
+    
+    @media (prefers-reduced-motion: reduce) {
+        scroll-behavior: auto;
+    }
+}
+
+// Оптимизация фокуса
+*:focus {
+    outline: 2px solid var(--red);
+    outline-offset: 2px;
+}
+
+// Оптимизация для печати
+@media print {
+    .swiper-button-prev,
+    .swiper-button-next,
+    .swiper-pagination {
+        display: none !important;
+    }
+    
+    .element {
+        transform: none !important;
+        break-inside: avoid;
+    }
+}

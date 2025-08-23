@@ -75,6 +75,8 @@
 }
 
 .btn-style-first {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -119,10 +121,13 @@
 
 .btn-style-black-type {
   background-color: var(--black);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   align-items: center;
   gap: 16px;
   width: -moz-fit-content;
+  width: -webkit-fit-content;
   width: fit-content;
   transition: all 0.2s ease-in;
 }
@@ -145,10 +150,13 @@
 
 .btn-style-type-2 {
   background-color: var(--lemon);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   align-items: center;
   gap: 16px;
   width: -moz-fit-content;
+  width: -webkit-fit-content;
   width: fit-content;
   transition: all 0.2s ease-in;
 }
@@ -174,4 +182,45 @@
 .btn-style-type-2:hover::after {
   background: url("/storage/source/logo/btn-yellow.svg") no-repeat;
   background-size: 26px;
+}
+
+.padding-box {
+  padding: 25px 15px;
+}
+
+.breadcrumbs {
+  font-size: 0.9rem;
+  font-family: sans-serif;
+}
+.breadcrumbs__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.breadcrumbs__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+}
+.breadcrumbs__item:not(:last-child)::after {
+  content: "/";
+  margin: 0 0.5rem;
+  color: #999;
+}
+.breadcrumbs__link {
+  text-decoration: none;
+  color: var(--red);
+  transition: color 0.2s ease;
+}
+.breadcrumbs__link:hover {
+  color: #0056b3;
+}
+.breadcrumbs__current {
+  color: #6c757d;
+  cursor: default;
 }

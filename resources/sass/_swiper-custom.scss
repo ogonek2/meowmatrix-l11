@@ -1,0 +1,169 @@
+// Кастомные стили для Swiper слайдеров
+
+// Слайдер сервисов
+.services-swiper {
+    width: 100%;
+    height: 100%;
+    
+    .swiper-slide {
+        opacity: 0;
+        transition: opacity 0.8s ease;
+        
+        &.swiper-slide-active {
+            opacity: 1;
+        }
+    }
+    
+    .swiper-button-prev,
+    .swiper-button-next {
+        width: 50px;
+        height: 50px;
+        background: rgba(196, 53, 47, 0.9);
+        border-radius: 50%;
+        color: white;
+        
+        &:hover {
+            background: rgba(196, 53, 47, 1);
+            transform: scale(1.1);
+        }
+        
+        &::after {
+            font-size: 20px;
+            font-weight: bold;
+        }
+    }
+    
+    .swiper-button-prev {
+        left: 20px;
+    }
+    
+    .swiper-button-next {
+        right: 20px;
+    }
+}
+
+// Слайдер клиентов
+.clients-swiper {
+    width: 100%;
+    height: 100%;
+    
+    .swiper-slide {
+        display: flex;
+        gap: 50px;
+        align-items: stretch;
+        
+        @media (max-width: 1280px) {
+            flex-direction: column;
+        }
+    }
+    
+    .swiper-button-prev,
+    .swiper-button-next {
+        width: 50px;
+        height: 50px;
+        background: rgba(196, 53, 47, 0.9);
+        border-radius: 50%;
+        color: white;
+        
+        &:hover {
+            background: rgba(196, 53, 47, 1);
+            transform: scale(1.1);
+        }
+        
+        &::after {
+            font-size: 20px;
+            font-weight: bold;
+        }
+    }
+    
+    .swiper-pagination {
+        bottom: 20px;
+        
+        .swiper-pagination-bullet {
+            width: 40px;
+            height: 5px;
+            border-radius: 100px;
+            background-color: rgba(255, 255, 255, 0.7);
+            border: 1px solid #ccc;
+            opacity: 1;
+            
+            &-active {
+                background-color: #229CA1;
+                border: none;
+            }
+        }
+    }
+}
+
+// Слайдер отзывов
+.mySwiperReviews {
+    .swiper-pagination {
+        position: static;
+        padding: 15px 0;
+        
+        .swiper-pagination-bullet {
+            width: 40px;
+            height: 5px;
+            border-radius: 100px;
+            background-color: rgba(255, 255, 255, 0.7);
+            border: 1px solid #ccc;
+            
+            &-active {
+                background-color: #229CA1;
+                border: none;
+            }
+        }
+    }
+}
+
+// Слайдер новостей
+.mySwiperNews {
+    .swiper-slide {
+        width: auto;
+        max-width: 428px;
+        min-width: 320px;
+    }
+}
+
+// Адаптивность для мобильных устройств
+@media (max-width: 768px) {
+    .services-swiper,
+    .clients-swiper {
+        .swiper-button-prev,
+        .swiper-button-next {
+            width: 40px;
+            height: 40px;
+            
+            &::after {
+                font-size: 16px;
+            }
+        }
+    }
+    
+    .clients-swiper {
+        .swiper-pagination {
+            .swiper-pagination-bullet {
+                width: 30px;
+                height: 4px;
+            }
+        }
+    }
+}
+
+// Анимации для слайдов
+.swiper-slide {
+    transition: all 0.3s ease;
+    
+    &:hover {
+        transform: translateY(-5px);
+    }
+}
+
+// Оптимизация производительности
+.swiper-wrapper {
+    will-change: transform;
+}
+
+.swiper-slide {
+    will-change: opacity, transform;
+}

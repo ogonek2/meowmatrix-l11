@@ -71,6 +71,8 @@
   z-index: 10;
   height: calc(100vh - 100px);
   max-height: 1440px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -91,6 +93,8 @@
 }
 .header-box .header-elements .element {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -98,6 +102,8 @@
 }
 .header-box .header-elements .element .title {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -105,6 +111,8 @@
   gap: 10px;
 }
 .header-box .header-elements .element .title .box-c {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   align-items: center;
   gap: 15px;
@@ -148,6 +156,7 @@
 .box-container-column {
   width: 100%;
   height: -moz-fit-content;
+  height: -webkit-fit-content;
   height: fit-content;
   background-repeat: no-repeat;
   background-size: cover;
@@ -168,6 +177,8 @@
 }
 
 .gap-position {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   gap: 300px;
@@ -191,11 +202,14 @@
   position: relative;
   z-index: 100;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: start;
   height: -moz-fit-content;
+  height: -webkit-fit-content;
   height: fit-content;
   min-height: 400px;
   overflow: hidden;
@@ -247,6 +261,8 @@
   position: relative;
   z-index: 10;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   justify-content: end;
 }
@@ -272,6 +288,8 @@
 }
 .services-box .content-el .element .block-content {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   justify-content: end;
 }
@@ -279,10 +297,13 @@
   position: relative;
   z-index: 10;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   overflow: hidden;
   height: -moz-fit-content;
+  height: -webkit-fit-content;
   height: fit-content;
   min-height: 600px;
   padding: 100px 150px;
@@ -292,6 +313,8 @@
   background: linear-gradient(135deg, transparent 150px, var(--white) 0);
 }
 .services-box .content-el .element .block-content .container .slider-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -299,6 +322,8 @@
 }
 .services-box .content-el .element .block-content .container .slider-items {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   transition: all 0.8s ease-in;
   transform-origin: center;
@@ -311,6 +336,8 @@
 }
 .services-box .content-el .element .block-content .container .slider-items .content-slide .box-item-slide {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -318,6 +345,8 @@
 }
 .services-box .content-el .element .block-content .container .slider-items .content-slide .box-item-slide .text-content {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
 }
@@ -336,6 +365,8 @@
   opacity: 1;
 }
 .services-box .content-el .element .block-content .container .slider-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
   position: relative;
@@ -376,11 +407,14 @@
   position: relative;
   z-index: 10;
   height: -moz-fit-content;
+  height: -webkit-fit-content;
   height: fit-content;
 }
 .perpectives-box .content-el {
   position: relative;
   z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -400,6 +434,8 @@
   position: relative;
   width: 100%;
   max-width: 1348px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -437,6 +473,8 @@
   max-width: 752px;
 }
 .perpectives-box .content-el .element .objects {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   flex-wrap: wrap;
   gap: 50px;
@@ -471,6 +509,7 @@
 @media (max-width: 500px) {
   .perpectives-box .content-el .element .objects .object p {
     width: -moz-min-content;
+    width: -webkit-min-content;
     width: min-content;
     font-size: 14px;
   }
@@ -489,6 +528,8 @@
 .stack-box .content-el {
   position: relative;
   z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   justify-content: end;
   flex-direction: column;
@@ -502,8 +543,11 @@
   background-color: var(--white);
   padding: 100px var(--var-horizontal-padding);
   height: -moz-fit-content;
+  height: -webkit-fit-content;
   height: fit-content;
   min-height: 590px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -519,6 +563,8 @@
 .stack-box .content-el .element .block-content .container {
   z-index: 10;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -526,6 +572,7 @@
 }
 .stack-box .content-el .element .block-content .container .text-container {
   width: -moz-fit-content;
+  width: -webkit-fit-content;
   width: fit-content;
   margin: 0 auto;
 }
@@ -533,11 +580,15 @@
   margin: 0;
 }
 .stack-box .content-el .element .block-content .container .objects {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   justify-content: center;
   gap: 50px 25px;
 }
 .stack-box .content-el .element .block-content .container .objects .object {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 30px;
   padding: 15px;
@@ -594,6 +645,8 @@
 .clients-box .content-el {
   position: relative;
   z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   justify-content: end;
   flex-direction: column;
@@ -608,6 +661,7 @@
   background-color: var(--white);
   padding: 0;
   height: -moz-fit-content;
+  height: -webkit-fit-content;
   height: fit-content;
   background: linear-gradient(-135deg, transparent 150px, var(--white) 0);
 }
@@ -624,6 +678,7 @@
 }
 .clients-box .content-el .element .block-content .container .text-container {
   width: -moz-fit-content;
+  width: -webkit-fit-content;
   width: fit-content;
   position: relative;
 }
@@ -648,16 +703,22 @@
   width: 100%;
   padding: 0;
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
 }
 .clients-box .content-el .element .block-content .container .content-element-container .objects {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   overflow: hidden;
 }
 .clients-box .content-el .element .block-content .container .content-element-container .objects .object {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 50px;
   align-items: stretch;
@@ -676,6 +737,8 @@
 .clients-box .content-el .element .block-content .container .content-element-container .objects .object .sw-client .positions-banner .images {
   width: 100%;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   align-items: start;
 }
@@ -702,6 +765,8 @@
   padding: var(--var-vertical-padding) var(--var-horizontal-padding);
   align-self: center;
   background-color: rgba(255, 255, 255, 0.7);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
 }
@@ -738,6 +803,7 @@
   .clients-box .content-el .element .block-content .container .content-element-container .objects .object .information {
     position: absolute;
     height: -moz-fit-content;
+    height: -webkit-fit-content;
     height: fit-content;
     width: 100%;
     max-width: unset;
@@ -749,6 +815,8 @@
   display: none;
 }
 .clients-box .content-el .element .block-content .container .content-element-container .objects .object.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .clients-box .content-el .element-texty {
@@ -784,6 +852,8 @@
 .reviews-box .content-el {
   position: relative;
   z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   justify-content: end;
   flex-direction: column;
@@ -795,7 +865,10 @@
   width: 100%;
   max-width: 700px;
   height: -moz-fit-content;
+  height: -webkit-fit-content;
   height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -817,12 +890,15 @@
   width: 100%;
 }
 .reviews-box .content-el .element .block-content .container .content-element-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   gap: 32px;
 }
 .reviews-box .content-el .element .block-content .container .content-element-container .text-container {
   width: -moz-fit-content;
+  width: -webkit-fit-content;
   width: fit-content;
 }
 .reviews-box .content-el .element .block-content .container .content-element-container .text-container h1 {
@@ -839,6 +915,8 @@
   width: 100%;
   padding: var(--var-vertical-padding) 50px;
   background-color: var(--white);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   gap: 50px;
@@ -865,10 +943,13 @@
 }
 .reviews-box .content-el .element .block-content .container .content-element-container .objects .object .author {
   width: -moz-fit-content;
+  width: -webkit-fit-content;
   width: fit-content;
   padding: 5px 15px;
   border-radius: 25px;
   background-color: #F9F9F9;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -880,6 +961,7 @@
 }
 .reviews-box .content-el .element .block-content .container .content-element-container .objects .object .author .name-author {
   width: -moz-fit-content;
+  width: -webkit-fit-content;
   width: fit-content;
 }
 .reviews-box .content-el .element .block-content .container .content-element-container .objects .object .author .name-author p {
@@ -944,6 +1026,8 @@
 .parthner-box .content-el {
   position: relative;
   z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   justify-content: start;
   flex-direction: column;
@@ -954,7 +1038,10 @@
   z-index: 100;
   width: 100%;
   height: -moz-fit-content;
+  height: -webkit-fit-content;
   height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -976,6 +1063,8 @@
   width: 100%;
 }
 .parthner-box .content-el .element .block-content .container .content-element-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -983,6 +1072,7 @@
 }
 .parthner-box .content-el .element .block-content .container .content-element-container .text-container {
   width: -moz-fit-content;
+  width: -webkit-fit-content;
   width: fit-content;
   position: relative;
 }
@@ -1002,6 +1092,8 @@
   background: linear-gradient(-135deg, transparent 50px, var(--lemon) 0);
 }
 .parthner-box .content-el .element .block-content .container .content-element-container .items-content-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   justify-content: space-between;
   gap: 50px 100px;
@@ -1009,6 +1101,8 @@
 .parthner-box .content-el .element .block-content .container .content-element-container .items-content-container .banner-p {
   width: 100%;
   max-width: 659px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   grid-gap: 20px;
@@ -1035,8 +1129,11 @@
 }
 .parthner-box .content-el .element .block-content .container .content-element-container .items-content-container .item-p {
   width: -moz-fit-content;
+  width: -webkit-fit-content;
   width: fit-content;
   align-self: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   gap: 50px;
@@ -1073,6 +1170,8 @@
   /*Irrelevant code*/
   width: 200px;
   height: 200px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -1100,6 +1199,8 @@
 .news-box .content-el {
   position: relative;
   z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   justify-content: start;
   flex-direction: column;
@@ -1110,7 +1211,10 @@
   z-index: 100;
   width: 100%;
   height: -moz-fit-content;
+  height: -webkit-fit-content;
   height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -1128,6 +1232,8 @@
 }
 .news-box .content-el .element .block-content .container .content-element-container {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   gap: 60px;
@@ -1136,6 +1242,7 @@
 }
 .news-box .content-el .element .block-content .container .content-element-container .text-container {
   width: -moz-fit-content;
+  width: -webkit-fit-content;
   width: fit-content;
 }
 .news-box .content-el .element .block-content .container .content-element-container .text-container h1 {
@@ -1153,6 +1260,8 @@
   max-width: 428px;
   min-width: 320px;
   height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -1211,6 +1320,8 @@
 .faq-box .content-el {
   position: relative;
   z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   justify-content: start;
   flex-direction: column;
@@ -1221,7 +1332,10 @@
   z-index: 100;
   width: 100%;
   height: -moz-fit-content;
+  height: -webkit-fit-content;
   height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -1245,12 +1359,15 @@
 }
 .faq-box .content-el .element .block-content .container .content-element-container {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   gap: 60px;
 }
 .faq-box .content-el .element .block-content .container .content-element-container .text-container {
   width: -moz-fit-content;
+  width: -webkit-fit-content;
   width: fit-content;
 }
 .faq-box .content-el .element .block-content .container .content-element-container .text-container h1 {
@@ -1258,6 +1375,8 @@
 }
 .faq-box .content-el .element .block-content .container .content-element-container .objects {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -1267,9 +1386,12 @@
   width: 100%;
   padding: 16px;
   height: -moz-fit-content;
+  height: -webkit-fit-content;
   height: fit-content;
   background-color: var(--white);
   transition: all 0.2s ease-in;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -1277,6 +1399,8 @@
   transform: translateX(-50%);
 }
 .faq-box .content-el .element .block-content .container .content-element-container .objects .object .head {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1289,6 +1413,8 @@
 .faq-box .content-el .element .block-content .container .content-element-container .objects .object .head .control-elem {
   width: 20px;
   height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   justify-content: center;

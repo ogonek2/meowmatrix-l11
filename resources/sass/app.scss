@@ -71,6 +71,15 @@ input {
     }
 }
 
+.text-fs-class{
+    font-size: 30px;
+    font-family: $f_russo;
+    text-transform: uppercase;
+    @media (max-width: 1080px) {
+        font-size: 18px;
+    }
+}
+
 .box {
     width: 100%;
     max-width: 1920px;

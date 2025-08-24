@@ -34,7 +34,7 @@
     </div>
 
     <!-- Header -->
-    <header class="fixed top-0 left-0 right-0 z-40 bg-dark-950/90 backdrop-blur-xl border-b border-primary-neon/20 transition-all duration-300" id="header">
+    <header class="fixed top-0 left-0 right-0 z-40 bg-gradient-to-r from-dark-950/95 to-dark-900/95 backdrop-blur-xl border-b border-primary-neon/20 transition-all duration-300" id="header">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
                 <!-- Logo -->
@@ -140,7 +140,7 @@
 
     <!-- Main Content -->
     <main class="pt-20">
-        @yield('content')
+                @yield('content')
     </main>
 
     <!-- Footer -->
@@ -210,17 +210,17 @@
                             <span>Київ, Україна</span>
                         </li>
                     </ul>
-                </div>
             </div>
+        </div>
 
             <div class="border-t border-primary-neon/20 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
                 <p class="text-gray-500 text-sm">{{ __('app.footer_copyright') }}</p>
                 <div class="flex space-x-6 mt-4 md:mt-0">
                     <a href="#" class="text-gray-500 hover:text-primary-neon text-sm transition-colors duration-300">{{ __('app.footer_privacy') }}</a>
                     <a href="#" class="text-gray-500 hover:text-primary-neon text-sm transition-colors duration-300">{{ __('app.footer_terms') }}</a>
-                </div>
             </div>
         </div>
+    </div>
     </footer>
 
     <!-- Back to Top Button -->

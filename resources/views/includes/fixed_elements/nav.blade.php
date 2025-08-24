@@ -1,67 +1,86 @@
-<div class="nav-bar full-width box">
-    <div class="nav-elemenets">
-        <div class="row">
-            <div class="element">
-                <div class="main-logo">
+<nav class="fixed top-0 left-0 w-full z-50 bg-gradient-to-r from-dark-950/95 to-dark-900/95 backdrop-blur-lg border-b border-primary-neon/20">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-20">
+            <!-- Logo -->
+            <div class="flex-shrink-0">
+                <div class="text-2xl font-russo text-primary-neon neon-text-glow cursor-pointer hover:scale-110 transition-transform duration-300">
                     MEOWMATRIX
                 </div>
             </div>
-            <div class="element">
-                <div class="navigator">
-                    <ul>
-                        <li><a href="#">Послуги</a></li>
-                        <li><a href="#">Про нас</a></li>
-                        <li><a href="#">Наші клієнти</a></li>
-                        <li><a href="#">Корисне</a></li>
-                        <li><a href="#">B2B</a></li>
-                        <li><a href="#">Контакти</a></li>
-                    </ul>
+            
+            <!-- Navigation -->
+            <div class="hidden lg:flex items-center space-x-8">
+                <a href="#services" class="nav-link text-white hover:text-primary-neon transition-all duration-300 hover:scale-105">Послуги</a>
+                <a href="#about" class="nav-link text-white hover:text-primary-neon transition-all duration-300 hover:scale-105">Про нас</a>
+                <a href="#clients" class="nav-link text-white hover:text-primary-neon transition-all duration-300 hover:scale-105">Клієнти</a>
+                <a href="#blog" class="nav-link text-white hover:text-primary-neon transition-all duration-300 hover:scale-105">Блог</a>
+                <a href="#contact" class="nav-link text-white hover:text-primary-neon transition-all duration-300 hover:scale-105">Контакти</a>
+            </div>
+            
+            <!-- CTA Button -->
+            <div class="hidden lg:flex items-center space-x-4">
+                <button class="px-6 py-3 bg-primary-neon text-black font-russo rounded-lg hover:bg-accent-neon transition-all duration-300 transform hover:scale-105 neon-border">
+                    Обговорити проєкт
+                </button>
+                
+                <!-- Social Media -->
+                <div class="relative group">
+                    <button class="p-3 text-primary-neon hover:text-accent-neon transition-colors duration-300">
+                        <i class="fab fa-instagram text-xl"></i>
+                    </button>
+                    <div class="absolute right-0 top-full bg-dark-800 border border-primary-neon/30 rounded-lg p-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-white hover:text-primary-neon transition-colors duration-300"><i class="fab fa-facebook text-xl"></i></a>
+                            <a href="#" class="text-white hover:text-primary-neon transition-colors duration-300"><i class="fab fa-instagram text-xl"></i></a>
+                            <a href="#" class="text-white hover:text-primary-neon transition-colors duration-300"><i class="fab fa-telegram text-xl"></i></a>
+                            <a href="#" class="text-white hover:text-primary-neon transition-colors duration-300"><i class="fab fa-tiktok text-xl"></i></a>
+                        </div>
+                    </div>
                 </div>
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <div class="lg:hidden">
+                <button class="mobile-menu-btn p-2 text-white hover:text-primary-neon transition-colors duration-300">
+                    <div class="w-6 h-0.5 bg-current mb-1.5 transition-all duration-300"></div>
+                    <div class="w-6 h-0.5 bg-current mb-1.5 transition-all duration-300"></div>
+                    <div class="w-6 h-0.5 bg-current transition-all duration-300"></div>
+                </button>
             </div>
         </div>
-        <div class="row">
-            <div class="element">
-                <div class="btn btn-style-first">
-                    <span>Обговорити проєкт</span>
-                </div>
-            </div>
-            <div class="element">
-                <div class="social-media">
-                    <ul class="social-media-panel">
-                        <li>
-                            <span id="open-social-media-menu"><i class="fa-brands fa-instagram"></i></span>
-                            <ul class="sl-panel hide" id="sl_panel">
-                                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                                <li><a href="#"><i class="fa-brands fa-telegram"></i></a></li>
-                                <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="element">
-                <div class="burger-btn-el" id="on_over_screen_bar">
-                    <div class="line-br"></div>
-                    <div class="line-br"></div>
-                    <div class="line-br"></div>
-                    <div class="line-br"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="nav-elements-bottom">
-        <div class="element">
-            <div class="link_el">
-                <a href="#">
-                    Переглянути послуги
-                </a>
-            </div>
-        </div>
-        <div class="element">
-            <div class="btn btn-style-black-type">
-                <span>Консультація</span>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu hidden lg:hidden bg-dark-800 border-t border-primary-neon/20">
+            <div class="py-4 space-y-4">
+                <a href="#services" class="block text-white hover:text-primary-neon transition-colors duration-300 py-2">Послуги</a>
+                <a href="#about" class="block text-white hover:text-primary-neon transition-colors duration-300 py-2">Про нас</a>
+                <a href="#clients" class="block text-white hover:text-primary-neon transition-colors duration-300 py-2">Клієнти</a>
+                <a href="#blog" class="block text-white hover:text-primary-neon transition-colors duration-300 py-2">Блог</a>
+                <a href="#contact" class="block text-white hover:text-primary-neon transition-colors duration-300 py-2">Контакти</a>
+                <button class="w-full mt-4 px-6 py-3 bg-primary-neon text-black font-russo rounded-lg hover:bg-accent-neon transition-all duration-300">
+                    Обговорити проєкт
+                </button>
             </div>
         </div>
     </div>
-</div>
+</nav>
+
+<!-- Mobile Menu Toggle Script -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    
+    mobileMenuBtn.addEventListener('click', function() {
+        mobileMenu.classList.toggle('hidden');
+        
+        // Animate hamburger to X
+        const lines = this.querySelectorAll('div');
+        lines.forEach((line, index) => {
+            if (index === 0) line.style.transform = mobileMenu.classList.contains('hidden') ? 'none' : 'rotate(45deg) translate(5px, 5px)';
+            if (index === 1) line.style.opacity = mobileMenu.classList.contains('hidden') ? '1' : '0';
+            if (index === 2) line.style.transform = mobileMenu.classList.contains('hidden') ? 'none' : 'rotate(-45deg) translate(7px, -6px)';
+        });
+    });
+});
+</script>

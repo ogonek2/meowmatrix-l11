@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>CSS Test</title>
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-tech-dark">
+    <div class="container mx-auto p-8">
+        <h1 class="text-white text-4xl mb-8">CSS Test Page</h1>
+        
+        <!-- Test tech-block -->
+        <div class="tech-block p-8 mb-8">
+            <h2 class="text-white text-2xl mb-4">Tech Block Test</h2>
+            <p class="text-gray-300">If you see this with proper styling, CSS is working!</p>
+        </div>
+        
+        <!-- Test tech-block-light -->
+        <div class="tech-block-light p-8 mb-8">
+            <h2 class="text-gray-800 text-2xl mb-4">Tech Block Light Test</h2>
+            <p class="text-gray-600">If you see this with proper styling, CSS is working!</p>
+        </div>
+        
+        <!-- Test digital-grid -->
+        <div class="bg-tech-dark digital-grid p-8 mb-8" style="height: 200px;">
+            <h2 class="text-white text-2xl">Digital Grid Test</h2>
+            <p class="text-gray-300">You should see a moving grid pattern in the background</p>
+        </div>
+        
+        <!-- Test clip-path polygons -->
+        <div class="flex gap-4 mb-8">
+            <div class="w-16 h-16 bg-primary-neon clip-path-polygon-1 flex items-center justify-center">
+                <i class="fas fa-code text-dark-950"></i>
+            </div>
+            <div class="w-16 h-16 bg-accent-neon clip-path-polygon-2 flex items-center justify-center">
+                <i class="fas fa-server text-dark-950"></i>
+            </div>
+            <div class="w-16 h-16 bg-secondary-neon clip-path-polygon-3 flex items-center justify-center">
+                <i class="fas fa-mobile-alt text-dark-950"></i>
+            </div>
+        </div>
+        
+        <!-- Test form elements -->
+        <div class="tech-block p-8">
+            <h3 class="text-white text-xl mb-4">Form Test</h3>
+            <form class="space-y-4">
+                <input type="text" placeholder="Test input" class="w-full px-4 py-3 bg-dark-900/50 border border-gray-600 rounded-lg text-white placeholder-gray-400">
+                <button class="px-6 py-3 bg-primary-neon text-dark-950 font-russo rounded-lg">Test Button</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+

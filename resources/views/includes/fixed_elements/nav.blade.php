@@ -3,7 +3,7 @@
         <div class="flex items-center justify-between h-20">
             <!-- Logo -->
             <div class="flex-shrink-0">
-                <div class="text-2xl font-russo text-primary-neon neon-text-glow cursor-pointer hover:scale-110 transition-transform duration-300">
+                <div class="meowmatrix-logo text-2xl cursor-pointer hover:scale-110 transition-transform duration-300">
                     MEOWMATRIX
                 </div>
             </div>
@@ -19,7 +19,8 @@
             
             <!-- CTA Button -->
             <div class="hidden lg:flex items-center space-x-4">
-                <button class="px-6 py-3 bg-primary-neon text-black font-russo rounded-lg hover:bg-accent-neon transition-all duration-300 transform hover:scale-105 neon-border">
+                <button class="px-6 py-3 bg-primary-neon text-black font-russo focus-frame hover:bg-accent-neon transition-all duration-300 transform hover:scale-105">
+                    <div class="digital-ribbon mr-2">💼</div>
                     Обговорити проєкт
                 </button>
                 
@@ -57,7 +58,8 @@
                 <a href="#clients" class="block text-white hover:text-primary-neon transition-colors duration-300 py-2">Клієнти</a>
                 <a href="#blog" class="block text-white hover:text-primary-neon transition-colors duration-300 py-2">Блог</a>
                 <a href="#contact" class="block text-white hover:text-primary-neon transition-colors duration-300 py-2">Контакти</a>
-                <button class="w-full mt-4 px-6 py-3 bg-primary-neon text-black font-russo rounded-lg hover:bg-accent-neon transition-all duration-300">
+                <button class="w-full mt-4 px-6 py-3 bg-primary-neon text-black font-russo focus-frame hover:bg-accent-neon transition-all duration-300">
+                    <div class="digital-ribbon mr-2">💼</div>
                     Обговорити проєкт
                 </button>
             </div>

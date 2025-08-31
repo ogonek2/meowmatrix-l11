@@ -10,19 +10,19 @@
             
             <!-- Navigation -->
             <div class="hidden lg:flex items-center space-x-8">
-                <a href="#services" class="nav-link text-white hover:text-primary-neon transition-all duration-300 hover:scale-105">Послуги</a>
-                <a href="#about" class="nav-link text-white hover:text-primary-neon transition-all duration-300 hover:scale-105">Про нас</a>
-                <a href="#clients" class="nav-link text-white hover:text-primary-neon transition-all duration-300 hover:scale-105">Клієнти</a>
-                <a href="#blog" class="nav-link text-white hover:text-primary-neon transition-all duration-300 hover:scale-105">Блог</a>
-                <a href="#contact" class="nav-link text-white hover:text-primary-neon transition-all duration-300 hover:scale-105">Контакти</a>
+                <a href="/" class="nav-link text-white hover:text-primary-neon transition-all duration-300 hover:scale-105">Головна</a>
+                <a href="/about" class="nav-link text-white hover:text-primary-neon transition-all duration-300 hover:scale-105">Про компанію</a>
+                <a href="#businesses" class="nav-link text-white hover:text-primary-neon transition-all duration-300 hover:scale-105">Наші бізнеси</a>
+                <a href="/forum" class="nav-link text-white hover:text-primary-neon transition-all duration-300 hover:scale-105">Форум</a>
+                <a href="/contact" class="nav-link text-white hover:text-primary-neon transition-all duration-300 hover:scale-105">Контакти</a>
             </div>
             
             <!-- CTA Button -->
             <div class="hidden lg:flex items-center space-x-4">
-                <button class="px-6 py-3 bg-primary-neon text-black font-russo focus-frame hover:bg-accent-neon transition-all duration-300 transform hover:scale-105">
-                    <div class="digital-ribbon mr-2">💼</div>
-                    Обговорити проєкт
-                </button>
+                <a href="/forum" class="px-6 py-3 bg-primary-neon text-black font-russo focus-frame hover:bg-accent-neon transition-all duration-300 transform hover:scale-105">
+                    <div class="digital-ribbon mr-2">👥</div>
+                    Приєднатися до форуму
+                </a>
                 
                 <!-- Social Media -->
                 <div class="relative group">
@@ -53,15 +53,15 @@
         <!-- Mobile Menu -->
         <div class="mobile-menu hidden lg:hidden bg-dark-800 border-t border-primary-neon/20">
             <div class="py-4 space-y-4">
-                <a href="#services" class="block text-white hover:text-primary-neon transition-colors duration-300 py-2">Послуги</a>
-                <a href="#about" class="block text-white hover:text-primary-neon transition-colors duration-300 py-2">Про нас</a>
-                <a href="#clients" class="block text-white hover:text-primary-neon transition-colors duration-300 py-2">Клієнти</a>
-                <a href="#blog" class="block text-white hover:text-primary-neon transition-colors duration-300 py-2">Блог</a>
-                <a href="#contact" class="block text-white hover:text-primary-neon transition-colors duration-300 py-2">Контакти</a>
-                <button class="w-full mt-4 px-6 py-3 bg-primary-neon text-black font-russo focus-frame hover:bg-accent-neon transition-all duration-300">
-                    <div class="digital-ribbon mr-2">💼</div>
-                    Обговорити проєкт
-                </button>
+                <a href="/" class="block text-white hover:text-primary-neon transition-colors duration-300 py-2">Головна</a>
+                <a href="/about" class="block text-white hover:text-primary-neon transition-colors duration-300 py-2">Про компанію</a>
+                <a href="#businesses" class="block text-white hover:text-primary-neon transition-colors duration-300 py-2">Наші бізнеси</a>
+                <a href="/forum" class="block text-white hover:text-primary-neon transition-colors duration-300 py-2">Форум</a>
+                <a href="/contact" class="block text-white hover:text-primary-neon transition-colors duration-300 py-2">Контакти</a>
+                <a href="/forum" class="w-full mt-4 px-6 py-3 bg-primary-neon text-black font-russo focus-frame hover:bg-accent-neon transition-all duration-300 text-center block">
+                    <div class="digital-ribbon mr-2">👥</div>
+                    Приєднатися до форуму
+                </a>
             </div>
         </div>
     </div>

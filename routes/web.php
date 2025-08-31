@@ -17,6 +17,18 @@ Route::get('/', function () {
     return view('welcome');
 })->name('home');
 
+Route::get('/forum', function () {
+    return view('forum');
+})->name('forum');
+
+Route::get('/about', function () {
+    return view('about');
+})->name('about');
+
+Route::get('/contact', function () {
+    return view('contact');
+})->name('contact');
+
 // Language switching
 Route::get('/language/{locale}', [\App\Http\Controllers\LanguageController::class, 'switchLanguage'])->name('language.switch');
 
